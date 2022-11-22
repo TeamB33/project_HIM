@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+    /* background-size */
+    height: 100vh;
+    /* background_flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6e9a0;
+    background-image: url("images/Circles.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0px;
+    padding: 0px 0px;
+}
+
+body p {
+    font-family: "Inter", sans-serif;
+}
+
+#first-text {
+    font-size: 13px;
+    color: #7780a1;
+    letter-spacing: 3px;
+}
+
+#second-text {
+    color: #7780a1;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+
+#main_logo {
+    background-image: url("images/main_text.png");
+    background-size: 100% 100%;
+    width: 740px;
+    height: 200px;
+}
+
+#input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* first-button */
+.filebox {
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: center;
+    border: #cbcbcb;
+    border-radius: 10px;
+}
+
+.filebox input[type="file"] {
+    /* input숨기기 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+/* second-button */
+#input-form input,
+.filebox {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.2px;
+    color: #797979;
+    padding: 15px 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 5px #cbcbcb;
+    margin-top: 20px;
+}
+
+#login-form input:focus {
+    border-color: var(--yellow);
+}
