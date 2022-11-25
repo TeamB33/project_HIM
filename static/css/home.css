@@ -9,7 +9,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #f6e9a0;
-    background-image: url("images/Circles.png");
+    background-image: url("/static/images/Circles.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -34,7 +34,7 @@ body p {
 }
 
 #main_logo {
-    background-image: url("images/main_text.png");
+    background-image: url("/static/images/main_text.png");
     background-size: 100% 100%;
     width: 740px;
     height: 200px;
