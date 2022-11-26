@@ -53,20 +53,25 @@ body p {
     vertical-align: center;
     border: #cbcbcb;
     border-radius: 10px;
+    cursor: pointer;
+}
+/* 버튼에 포인터 적용 */
+.filebox label {
+    cursor: pointer;
 }
 
 .filebox input[type="file"] {
     /* input숨기기 */
-    position: absolute;
-    width: 1px;
-    height: 1px;
+    /* position: absolute; */
+    /* width: 1px;
+    height: 1px; */
     padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
-/* second-button */
+/* second-button design */
 #input-form input,
 .filebox {
     border: none;
@@ -80,8 +85,10 @@ body p {
     background-color: white;
     box-shadow: 3px 3px 5px #cbcbcb;
     margin-top: 20px;
+    cursor: pointer;
 }
-
-#login-form input:focus {
-    border-color: var(--yellow);
+/* 버튼 호버 색상*/
+.filebox:hover {
+    background-color: #f6e9a0;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
