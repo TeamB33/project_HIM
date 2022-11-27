@@ -57,6 +57,23 @@ def read(num):
         </body>
     </html>'''  
 
+# 아래는 파일 다운로드를 위한 예시
+@app.route("/file_download")
+def hello():
+    return '''
+    <a href="/csv_file_download_with_file">Click me.</a>
+    
+    <form method="get" action="csv_file_download_with_file">
+        <button type="submit">Download!</button>
+    </form>
+    '''
 
+from flask import send_file
+
+@app.route('/csv_file_download_with_file')
+def csv_file_download_with_file():
+    file_name = f"static/uploads/Background.png"
+    return send_file(file_name,
+                     as_attachment=True)
 
 app.run(debug=True)

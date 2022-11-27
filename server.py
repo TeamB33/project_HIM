@@ -1,5 +1,5 @@
 import os
-from flask import Flask, flash, request, redirect, render_template
+from flask import Flask, flash, request, redirect, render_template, url_for
 from werkzeug.utils import secure_filename
 # render_templete은 .html 파일을 text형태로 변환
 
@@ -40,6 +40,13 @@ def upload_image():
     else:
         flash('Allowed image types are - png, jpg, jpeg, gif')
         return redirect(request.url)
+    
+@app.route('/display/<filename>')
+def display_image(filename):
+    #print('display_image filename: ' + filename)
+    return redirect(url_for('static', filename='uploads/' + filename), code=301)
+ 
+ 
 # 파일 업로드 처리 라우팅
 
 # @app.route('/upload/', methods = ['POST'])

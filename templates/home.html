@@ -13,10 +13,10 @@
         <div id="main_logo"></div>
         <p id="second-text">convert into high quality</p>
         <!-- notice image upload -->
-        <p>
+        <p class="notice">
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
-                    <ul>
+                    <ul class='notice'>
                     {% for message in messages %}
                         <li>{{ message }}</li>
                     {% endfor %}
@@ -24,6 +24,7 @@
                 {% endif %}
             {% endwith %}
         </p>
+        
         <form id="input-form" action="/" method="POST" enctype = "multipart/form-data" >
             <div class="filebox">
                 <label for="input-image">이미지 선택</label>

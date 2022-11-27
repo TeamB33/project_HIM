@@ -20,7 +20,12 @@ body {
 body p {
     font-family: "Inter", sans-serif;
 }
-
+.notice {
+    margin: 0px 0px;
+}
+.notice_image {
+    max-height: 50px;
+}
 #first-text {
     font-size: 13px;
     color: #7780a1;
@@ -62,7 +67,7 @@ body p {
 
 .filebox input[type="file"] {
     /* input숨기기 */
-    /* position: absolute; */
+    position: absolute;
     /* width: 1px;
     height: 1px; */
     padding: 0;
@@ -84,8 +89,10 @@ body p {
     border-radius: 10px;
     background-color: white;
     box-shadow: 3px 3px 5px #cbcbcb;
-    margin-top: 20px;
     cursor: pointer;
+}
+#input-form input {
+    margin-top: 20px;
 }
 /* 버튼 호버 색상*/
 .filebox:hover {
