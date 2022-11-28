@@ -23,7 +23,6 @@ def index():
     return render_template('home.html')
      # templates 폴더를 만들고 그 안에 html파일을 넣어야함. 그러나 css는 적용되지않음.
 
-# 이미지 업로드 라우팅
 @app.route('/',methods=['POST'])
 def upload_image():
     if 'file' not in request.files:
