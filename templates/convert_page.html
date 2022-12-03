@@ -5,16 +5,32 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>contert_page</title>
-        <link rel="stylesheet" href="convert_page.css" />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/convert_page.css') }}"
+        />
     </head>
     <body>
+        <img class="main_logo" src="/static/images/title_1.png" />
         <div class="contentbox">
             <div id="input-img"></div>
             <div id="arrow"></div>
             <div id="out-img"></div>
         </div>
-        <div class="downloadbox">
-            <div id="downtext">image converted!</div>
-        </div>
+
+        <form
+            class="downloadbox"
+            action="/"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+            <label id="downtext">image converted!</label>
+
+            <div class="downbox" for="down-submit">
+                <img id="down_logo" src="/static/images/down_logo.png" />
+                <p id="downtext_down">Download</p>
+            </div>
+            <input type="submit" name="down" id="down-submit" />
+        </form>
     </body>
 </html>

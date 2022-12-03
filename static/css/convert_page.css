@@ -7,7 +7,21 @@ body div {
     flex-direction: column;
 }
 
-body div {
+.main_logo {
+    position: absolute;
+    width: 230px;
+    height: 90px;
+    top: 30px;
+    left: 30px;
+    background-repeat: no-repeat;
+}
+
+.contentbox {
+    box-shadow: 3px 3px 5px #cbcbcb;
+}
+
+body div,
+.downloadbox {
     background-color: white;
     border-radius: 15px;
 }
@@ -25,21 +39,72 @@ body div {
 #out-img {
     width: 250px;
     height: 340px;
-    background-color: black;
-    background-image: url("images/my.jpeg");
+    background-image: url("/static/images/noisy.png");
     background-size: cover;
 }
 
 #arrow {
-    width: 70px;
-    height: 50px;
-    background-image: url("images/arrow.png");
+    width: 50px;
+    height: 40px;
+    background-image: url("/static/images/arrow.png");
     background-size: cover;
     background-size: 100% 100%;
 }
 
 .downloadbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 20vw;
-    height: 20vh;
+    height: 16vh;
     margin-top: 30px;
+    background-color: white;
+    box-shadow: 3px 3px 5px #cbcbcb;
+}
+
+#downtext {
+    font-size: 25px;
+    font-weight: bold;
+}
+#downtext_down {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#down_logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.downbox {
+    background-color: #ffc600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 15px;
+    border-radius: 10px;
+    width: 15vw;
+    height: 2vh;
+    box-shadow: 3px 3px 5px #cbcbcb;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.downloadbox input[type="submit"] {
+    /* input숨기기 */
+    position: absolute;
+    /* width: 1px;
+    height: 1px; */
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+#downbox:hover {
+    background-color: #f6e9a0;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
