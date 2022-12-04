@@ -7,6 +7,12 @@ body div {
     flex-direction: column;
 }
 
+body {
+    background-image: url("/static/images/Circles.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .main_logo {
     position: absolute;
     width: 230px;
@@ -27,7 +33,7 @@ body div,
 }
 
 .contentbox {
-    margin-top: 10vh;
+    margin-top: 8vh;
     width: 50vw;
     height: 60vh;
     flex-direction: row;
@@ -35,19 +41,35 @@ body div,
     align-items: center;
 }
 
-#input-img,
-#out-img {
+#input-img {
+    /* input image */
     width: 250px;
     height: 340px;
-    background-image: url("/static/images/noisy.png");
     background-size: cover;
+}
+#out-img {
+    /* output image */
+    width: 250px;
+    height: 340px;
+    background-size: cover;
+}
+
+.image_index {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffc600;
+}
+
+.image_box {
+    margin-bottom: 20px;
 }
 
 #arrow {
     width: 50px;
     height: 40px;
     background-image: url("/static/images/arrow.png");
-    background-size: cover;
     background-size: 100% 100%;
 }
 
@@ -71,11 +93,13 @@ body div,
     color: white;
     font-size: 20px;
     font-weight: bold;
+    display: inline;
 }
 #down_logo {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+    display: inline;
 }
 
 .downbox {

@@ -99,8 +99,9 @@ body p {
     box-shadow: 3px 3px 5px #cbcbcb;
     cursor: pointer;
 }
-#input-form input {
-    margin-top: 20px;
+#input-form input,
+label {
+    margin-top: 30px;
 }
 /* 버튼 호버 색상*/
 .filebox:hover {

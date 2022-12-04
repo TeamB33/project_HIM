@@ -11,26 +11,55 @@
         />
     </head>
     <body>
-        <img class="main_logo" src="/static/images/title_1.png" />
+        <a href="/">
+            <img class="main_logo" src="/static/images/title_1.png" />
+        </a>
+        <p>
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <ul>
+                {% for message in messages %}
+                  <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+              {% endif %}
+            {% endwith %}
+        </p>
+        
         <div class="contentbox">
-            <div id="input-img"></div>
+            <div>
+                <p class="image_index">Before</p>
+                <img class="image_box"
+                    id="input-img"
+                    src="{{ url_for('display_image') }}"
+                />
+            </div>
             <div id="arrow"></div>
-            <div id="out-img"></div>
+            <div>
+                <p class="image_index">After</p>
+                <img class="image_box"
+                    id="out-img"
+                    src="{{ url_for('display_denoise_image', filename=filename) }}"
+                />
+            </div>
         </div>
 
-        <form
-            class="downloadbox"
-            action="/"
-            method="POST"
-            enctype="multipart/form-data"
-        >
+        <form class="downloadbox" method="POST" action="/">
             <label id="downtext">image converted!</label>
 
-            <div class="downbox" for="down-submit">
-                <img id="down_logo" src="/static/images/down_logo.png" />
-                <p id="downtext_down">Download</p>
-            </div>
-            <input type="submit" name="down" id="down-submit" />
+            <label for="down-submit">
+                <div class="downbox">
+                    <img id="down_logo" src="/static/images/down_logo.png" />
+                    <p id="downtext_down">Download</p>
+                <div>
+            </label>
+
+            <input
+                type="submit"
+                name="down"
+                id="down-submit"
+                formaction="/csv_file_download_with_file"
+            />
         </form>
     </body>
 </html>

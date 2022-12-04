@@ -65,16 +65,25 @@ def hello():
     return '''
     <a href="/csv_file_download_with_file">Click me.</a>
     
-    <form method="get" action="csv_file_download_with_file">
-        <button type="submit">Download!</button>
+    <form method="POST" action="/">
+        <input
+                type="submit"
+                name="down"
+                id="down-submit"
+                formaction="csv_file_download_with_file"
+            />
     </form>
     '''
 
 from flask import send_file
+from flask import Flask, flash, request, redirect, render_template, url_for
+from werkzeug.utils import secure_filename
 
-@app.route('/csv_file_download_with_file')
+
+@app.route('/csv_file_download_with_file', methods=['GET', 'POST'])
 def csv_file_download_with_file():
-    file_name = f"static/images/my.jpeg"
+    file = request.files['file']
+    file_name = secure_filename(file.filename)
     
     # Create Model
     opt_path = 'NAFNet/options/test/SIDD/NAFNet-width64.yml'

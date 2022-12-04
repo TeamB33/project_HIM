@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
     </head>
     <body>
-        <img class="main_logo" src="/static/images/title_1.png" />
+        <a href="/">
+            <img class="main_logo" src="/static/images/title_1.png" />
+        </a>
         <p id="first-text">IMAGE CONVERT SERVICE</p>
         <div id="main_logo"></div>
         <p id="second-text">convert into high quality</p>
@@ -32,7 +34,7 @@
                 <input type="file" name="file" accept="image/*" id="input-image" />
             </div>
             <div>
-                <input type="submit" value="고화질로 변환하기" />
+                <input type="submit" value="고화질로 변환하기"/>
             </div>
         </form>
     </body>
