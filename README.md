@@ -60,8 +60,6 @@
 ![image2](https://user-images.githubusercontent.com/94797349/203092739-2f5f2daf-08a4-43e7-935c-6585cfd969d8.png)
 <br><br>
 
-![Component 1](https://user-images.githubusercontent.com/94797349/203244406-a1b74f7b-f5ea-491b-b125-9938304297d1.png)
-
 </div>
 
 🌟**Purpose**<br><br>
@@ -80,7 +78,7 @@
 <br><br><br>
 
 ## BackEnd!
-[<img src="https://user-images.githubusercontent.com/84899706/206168983-37e36ee5-564e-4a47-ab45-23fabd94443d.png" width="150" height="150"/>] <br></br>[<img src="https://user-images.githubusercontent.com/84899706/206169040-beacec0e-0be3-4592-adac-192f0ca5fc92.png" width="150" height="150"/>]
+<img src="https://user-images.githubusercontent.com/84899706/206168983-37e36ee5-564e-4a47-ab45-23fabd94443d.png" width="150" height="150"/>                         <img src="https://user-images.githubusercontent.com/84899706/206169040-beacec0e-0be3-4592-adac-192f0ca5fc92.png" width="350" height="150"/>
 
 
 
