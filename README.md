@@ -9,9 +9,6 @@
   
 </div>
 
-![image2](https://user-images.githubusercontent.com/94797349/203092739-2f5f2daf-08a4-43e7-935c-6585cfd969d8.png)
-<br><br>
-
 <div align="center">
     
    Yolov5🚀의 취약점 검사를 위해 COCO val 2017의 동물 객체 중 8가지를 카테고리로, 툴은 DALL-E-2를 이용해 생성한 이미지를 데이터 셋으로 하여 정확도를 검사한다.
@@ -48,7 +45,7 @@
 > **디노이징[NAFNET]**
 > <br>
 
-> **SR[SRCNN]**
+> **SR[HAT]**
 > <br>
 
 # WebSite HI:M
@@ -59,6 +56,9 @@
 > 연구 과정에서 사용한 디노이징과 SR을 활용한 화질개선 웹사이트
 
 <div align="center">
+
+![image2](https://user-images.githubusercontent.com/94797349/203092739-2f5f2daf-08a4-43e7-935c-6585cfd969d8.png)
+<br><br>
 
 ![Component 1](https://user-images.githubusercontent.com/94797349/203244406-a1b74f7b-f5ea-491b-b125-9938304297d1.png)
 
