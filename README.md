@@ -2,6 +2,7 @@
 
 
 <a href="https://github.com/Dabinishere/Object-detection-optimization-study-of-deformed-images/blob/main/README.md#a-case-study-of-object-detection-via-generated-image-using-deep-learning-model-based-on-image-generation">Link</a>
+
 # A Case Study of Object detection via Generated image Using deep learning model based on image generation
 <br>
 <div align="center">
@@ -104,8 +105,9 @@ DALL-E-2로 생성한 이미지는 기존에 노이즈가 크지 않아, 디노�
 
 > 연구 과정에서 사용한 디노이징과 SR을 활용한 화질개선 웹사이트
 <div align="center">
+   
+  ![him](https://user-images.githubusercontent.com/94797349/206855522-655a2acb-7664-485d-a4c0-5e75970a0f31.png)
 
-  ![Component 1](https://user-images.githubusercontent.com/94797349/203244406-a1b74f7b-f5ea-491b-b125-9938304297d1.png)
 
 </div>
 
@@ -133,3 +135,4 @@ DALL-E-2로 생성한 이미지는 기존에 노이즈가 크지 않아, 디노�
   > 회의록 : [회의록 DRIVE](https://docs.google.com/document/d/1fIRLpuA7V0Jb0l6fWg8KfU0ae6wXg9rNU_Z_M0-um4E/edit?usp=sharing)
 
 <br>
+
